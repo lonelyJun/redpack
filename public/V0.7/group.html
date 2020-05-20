@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2017新诺杯家庭英语秀-分组</title>
+    <link type="text/css" rel="stylesheet" href="css/reset.css">  
+    <link type="text/css" rel="stylesheet" href="css/common.css">
+    <link type="text/css" rel="stylesheet" href="css/group.css">            
+    <script type="text/javascript" src="js/jquery.min.js"></script> 
+    <script type="text/javascript" src="js/jquerySession.js"></script>           
+              
+</head>
+<body>
+    <div class="wrap">
+        <!--背景星空图-->
+        <img src="images/common_bg1.png" class="bg1">
+        <img src="images/common_bg2.png" class="bg2">
+        
+        <!--标题和底部冰山-->
+        <img src="images/common_activityTitle.png" class="activityTitle">
+        
+
+        <div class="groups">
+            <img src="images/group_dinosaur.png" id="dinosaur">           
+            <img src="images/group_line1.png">
+            <img src="images/group_group1.png" class="groupBtn">
+            <img src="images/group_line2.png">
+            <img src="images/group_group2.png" class="groupBtn">
+            <img src="images/group_line3.png">
+            <img src="images/group_group3.png" class="groupBtn">        
+        </div>
+        <img src="images/common_bannerPic.png" class="bannerPic">
+        <img src="images/common_bottom.png" class="bg3">
+    </div>
+</body>
+<script>
+    $(function(){
+        $("img.groupBtn").click(function(){
+            switch($(this).index()){
+                case 2:
+                     $.session.set('group', '3-5');
+                    window.location.href = "question.html";
+                    break;
+                case 4:
+                     $.session.set('group', '6-8');
+                    window.location.href = "question.html";
+                    break;                
+                case 6:
+                     $.session.set('group', '9-12');
+                    window.location.href = "question.html";
+                    break;                
+                default:
+                    console.log("btn error!");
+            }
+        });
+    });
+</script>
+</html>

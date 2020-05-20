@@ -1,0 +1,20 @@
+
+
+.groups{
+    width:65%;
+    margin:0 auto;
+    position: relative;
+    font-size:0
+}
+
+.groups img{
+    width:100%;
+}
+
+#dinosaur{
+    width:80%;
+    position:absolute;
+    top:7%;
+    left:50%;
+    transform:translateX(-50%);
+}

@@ -1,0 +1,31 @@
+/*∂®Œª Ù–‘*/
+.zjj_left{
+	float:left;
+}
+
+.zjj_right{
+	float:right;
+}
+
+.zjj_clear{
+	clear:both;
+}
+
+.zjj_relative{
+	position:relative;
+}
+
+.zjj_absolute{
+	position:absolute;
+}
+
+.zjj_center{
+	position:absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%); 	/* IE 9 */
+	-moz-transform:translate(-50%,-50%);	/* Firefox */
+	-o-transform:translate(-50%,-50%);
+}

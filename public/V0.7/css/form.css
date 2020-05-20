@@ -1,0 +1,112 @@
+form{
+    width:65%;
+    margin:0 auto;
+    position: relative;
+    padding-top:30%;
+}
+
+#dinosaur{
+    width:80%;
+    position:absolute;
+    top:4%;
+    left:50%;
+    transform:translateX(-50%);
+    user-select: none;
+}
+
+form input[type="text"]{
+    width:100%;
+    margin-top:10%;
+}
+
+form input[type="file"]{
+    width:100%;
+    opacity: 0;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.inputStyle{
+    padding:0.5em 0.5em;
+    border: 1px solid #000;
+    box-shadow:inset 0 0 0.5em #000;
+    border-radius: 0.5em;
+}
+
+.inputFileStyle{
+    margin-top:10%;   
+    width:100%;
+    height:1em;
+    background-color: #fff;
+    color:#888;
+    position:relative;
+    overflow:hidden;
+}
+
+.inputFileStyle p{
+    padding:0;
+    margin:0;
+}
+
+form .submit{
+    margin-top:10%;
+    width:40%;
+    margin-left:30%;
+}
+
+form .inputDiv{
+    position:relative;
+}
+
+.mentionIcon{
+    position: absolute;
+    right:-2.5em;;
+    top:40%;
+}
+
+.leftAngleSuccess{
+    width:0;
+    height:0;
+    display: inline-block;
+    border-top:0.8em solid transparent;
+    border-left:0 solid transparent;
+    border-right:1em solid #98bf21;
+    border-bottom:0.2em solid transparent;
+    transform:translate(0.4em,-0.4em);
+}
+
+.leftAngleWrong{
+    width:0;
+    height:0;
+    display: inline-block;
+    border-top:0.8em solid transparent;
+    border-left:0 solid transparent;
+    border-right:1em solid #bf2121;
+    border-bottom:0.2em solid transparent;
+    transform:translate(0.4em,-0.4em);
+}
+
+.success{
+    width:2em;
+    height:2em;
+    background-image:url("../images/form_right.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    background-color:#98bf21;
+    display: inline-block;
+    border-radius:0.2em;
+}
+
+.wrong{
+    width:2em;
+    height:2em;
+    background-image:url("../images/form_wrong.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    background-color:#bf2121;
+    display: inline-block;
+    border-radius:0.2em;
+}
